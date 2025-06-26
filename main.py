@@ -80,19 +80,19 @@ label.pack(pady=15)
 top = tk.Frame(canvas, bg="black")
 top.pack(padx=10, pady=5, anchor="center")
 
-prevButton = tk.Button(canvas, image=prev_img, borderwidth=0, command=play_prev)
+prevButton = tk.Button(canvas, image=prev_img, borderwidth=0, command=play_prev,background="black")
 prevButton.pack(pady=15, in_=top, side="left")
 
-stopButton = tk.Button(canvas, image=stop_img, borderwidth=0, command=stop)
+stopButton = tk.Button(canvas, image=stop_img, borderwidth=0, command=stop,background="black")
 stopButton.pack(pady=15, in_=top, side="left")
 
-playButton = tk.Button(canvas, image=play_img, borderwidth=0, command=select)
+playButton = tk.Button(canvas, image=play_img, borderwidth=0, command=select, background="black")
 playButton.pack(pady=15, in_=top, side="left")
 
-pauseButton = tk.Button(canvas, image=pause_img, borderwidth=0, command=pause_song, text="Pause")
+pauseButton = tk.Button(canvas, image=pause_img, borderwidth=0, command=pause_song, text="Pause",  background="black")
 pauseButton.pack(pady=15, in_=top, side="left")
 
-nextButton = tk.Button(canvas, image=next_img, borderwidth=0, command=play_next)
+nextButton = tk.Button(canvas, image=next_img, borderwidth=0, command=play_next, background="black")
 nextButton.pack(pady=15, in_=top, side="left")
 
 for root, dirs, files in os.walk(rootpath):
